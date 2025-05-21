@@ -2,28 +2,27 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
 class ArrayList
 {
 private:
-	int* array;
+	int* list;
 	int size;
+
 public:
-	ArrayList(int* arrayList, int size);
+	ArrayList();
 	~ArrayList();
-	void add(int value);
-	void add(int index, int value);
-	void addAll(int* values, int size);
-	void addAll(int index, int* values, int size);
 
+	void add(int element);
+	void add(int index, int element);
+	void addAll(int* elements, int size);
+	//void addAll(int index, int* elements, int size);
+	void revome();
 	void remove(int index);
-	void remove();
-
-	int size();
-	int get(int index);
-	void set(int index, int value);
 	void clear();
 	bool isEmpty();
-
+	int get(int index);
+	void set(int index, int element);
+	int getSize();
 	string toString();
 };
-
