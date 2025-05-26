@@ -1,18 +1,21 @@
 #pragma once
 #include "Human.h"
+
 class Worker : public Human {
 public:
-	double salary;
 	string company;
+	double salary;
+	string name;
+
 	Worker();
-	Worker(string name, int age, bool gender, double salarym, string company);
+	Worker(string name, int age, bool gender, string company, double salary);
 	Worker(const Worker& worker);
 	~Worker();
+
+	string getCompany();
+	void setCompany(string company);
 	double getSalary();
 	void setSalary(double salary);
-	string  getCompany();
-	void setCompany();
 	string toString();
 
 };
-

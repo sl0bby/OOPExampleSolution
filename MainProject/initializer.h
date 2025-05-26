@@ -1,6 +1,7 @@
-#include "Student.h"
-
-class Initializer {
-public:
-	void init(Group group);
-};
+//#include "Group.h"
+//
+//// Function util class
+//class Initializer {
+//public:
+//	void init(Group group);
+//};

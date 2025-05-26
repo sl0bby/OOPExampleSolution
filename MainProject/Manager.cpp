@@ -1,49 +1,51 @@
-#include "Manager.h"
-Student* Manager::getBestStudents(Student* list, int count1, int* count2) {
-	*count2 = 0;
-
-	for (int i = 0; i < count1; i++)
-	{
-		if (list[i].getAverageMark() >= 8)
-		{
-			++* count2;
-		}
-	}
-
-	Student* best = new Student[*count2];
-
-	for (int i = 0, j = 0; i < count1; i++)
-	{
-		if (list[i].getAverageMark() >= 8)
-		{
-			best[j] = list[i];
-			j++;
-		}
-	}
-
-	return best;
-}
-Student* Manager::getWorstStudents(Student* list, int count1, int* count2) {
-	*count2 = 0;
-
-	for (int i = 0; i < count1; i++)
-	{
-		if (list[i].getAverageMark() <= 5)
-		{
-			++* count2;
-		}
-	}
-
-	Student* worst = new Student[*count2];
-
-	for (int i = 0, j = 0; i < count1; i++)
-	{
-		if (list[i].getAverageMark() <= 5)
-		{
-			worst[j] = list[i];
-			j++;
-		}
-	}
-
-	return worst;
-}
+//#include "Manager.h"
+//
+//Group Manager::findBestStudents(Group group) {
+//	double bestMark = 8.5;
+//
+//	int bestCount = 0;
+//	
+//	for (int i = 0; i < group.getCount(); i++)
+//	{
+//		if (group.get(i).getAverageMark() >= bestMark) {
+//			bestCount++;
+//		}
+//	}
+//
+//	Group bestGroup(bestCount);
+//	
+//	for (int i = 0, j = 0; i < group.getCount(); i++)
+//	{
+//		if (group.get(i).getAverageMark() >= bestMark) {
+//			bestGroup.set(j, group.get(i));
+//			j++;
+//		}
+//	}
+//
+//	return bestGroup;
+//}
+//
+//Group Manager::findWorstStudents(Group group) {
+//	double worstMark = 6.0;
+//
+//	int worstCount = 0;
+//
+//	for (int i = 0; i < group.getCount(); i++)
+//	{
+//		if (group.get(i).getAverageMark() <= worstCount) {
+//			worstCount++;
+//		}
+//	}
+//
+//	Group worstGroup(worstCount);
+//
+//	for (int i = 0, j = 0; i < group.getCount(); i++)
+//	{
+//		if (group.get(i).getAverageMark() <= worstCount) {
+//			worstGroup.set(j, group.get(i));
+//			j++;
+//		}
+//	}
+//
+//	return worstGroup;
+//}

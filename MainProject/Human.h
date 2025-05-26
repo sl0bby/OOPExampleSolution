@@ -1,14 +1,14 @@
 #pragma once
 #include "main.h"
-using namespace std;
+
 class Human
 {
-private:
-	
-public:
+protected:
 	string name;
-	bool gender;
 	int age;
+	bool gender;	// true - male, false - female
+
+public:
 	Human();
 	Human(string name, int age, bool gender);
 	Human(const Human& human);
@@ -19,7 +19,6 @@ public:
 	int getAge();
 	void setAge(int age);
 	bool isGender();
-	bool setGender(bool gender);
+	void setGender(bool gender);
 	string toString();
 };
-
