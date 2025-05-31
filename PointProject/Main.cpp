@@ -1,24 +1,32 @@
 #include "Point2D.h"
+#include <iostream>
 
 int main() {
-	string s1, s2;
-	/*int a, b, c;
-	c = a + b;
-	c = a - b;
-	c = a * b;
-	c = a / b;
-	c = a % b;
-	++c;
-	c++;
-	c = -c;
+	Point2D point1(1, 1), point2(2, 2);
 
-	c = a.sum(b);*/
-	Point2D a(1, 1), b(2, 2);
+	cout << point1.toString() << " > "
+		<< point2.toString() << " --> "
+		<< (point1 > point2 ? "yes" : "no") << endl;
 
-	cout << a.toString() << " + " << b.toString()
-		<< " = " << (a + b).toString() << endl;
+	cout << point1.toString() << " <= "
+		<< point2.toString() << " --> "
+		<< (point1 <= point2 ? "yes" : "no") << endl;
 
-	int value = 5;
-	cout << a.toString() << " + " << value
-		<< " = " << (a + value).toString() << endl;
+	cout << point1.toString() << " < "
+		<< point2.toString() << " --> "
+		<< (point1 < point2 ? "yes" : "no") << endl;
+
+	cout << point1.toString() << " >= "
+		<< point2.toString() << " --> "
+		<< (point1 >= point2 ? "yes" : "no") << endl;
+
+	cout << point1.toString() << " == "
+		<< point2.toString() << " --> "
+		<< (point1 == point2 ? "yes" : "no") << endl;
+
+	cout << point1.toString() << " != "
+		<< point2.toString() << " --> "
+		<< (point1 != point2 ? "yes" : "no") << endl;
+
+	return 0;
 }
