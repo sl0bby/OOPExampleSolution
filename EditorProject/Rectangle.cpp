@@ -23,9 +23,9 @@ double Rectangle::getDistanceToOrigin() const {
 }
 
 string Rectangle::printInfo() const {
-    return "Тип: Rectangle, Верхний левый угол: (" + to_string(topLeft.getX()) +
-        ", " + to_string(topLeft.getY()) + "), Ширина: " + to_string(width) +
-        ", Высота: " + to_string(height);
+    return "Type: Rectangle. Еop left corner : (" + to_string(topLeft.getX()) +
+        ", " + to_string(topLeft.getY()) + "). Width: " + to_string(width) +
+        ". height: " + to_string(height);
 }
 
 string Rectangle::getType() const {
