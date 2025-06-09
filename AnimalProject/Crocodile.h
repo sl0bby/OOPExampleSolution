@@ -9,4 +9,3 @@ public:
 		cout << "Nyam... nyam... nyam..." << endl;
 	}
 };
-

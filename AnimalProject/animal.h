@@ -3,12 +3,27 @@
 class animal
 {
 public:
+	static int count = 0;
 	string name;
 
-	animal(string name) : name(name) {}
+	animal() {
+		count++;
+	}
+
+	animal(string name) : name(name) {
+		count++;
+	}
+
+	~animal() {
+		count--;
+	}
+	
+	static int getCount() {
+		return count;
+	}
 
 	//overriding
-	void getVoice() override {
+	virtual void getVoice() {
 		cout << "..." << endl;
 	}
 

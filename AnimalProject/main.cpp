@@ -4,25 +4,24 @@
 #include "crocodile.h"
 
 int main() {
-	AnimalStudio studio;
-	animal animal("Animal");
-	dog dog1("Pushok");
-	cat cat1("Sharly");
-	dog dog2("Laika");
-	dog dog3("Sharik");
-	Crocodile crocodile("Aligator");
-	cat cat2("Adel");
-	cat cat3("Masha");
+	cout << animal::count << endl;
+	animal a1, a2, a3;
 
-	animal** animals;
-	int size = 8;
-	/*animals = new Animal * [size] {&dog1, & cat1, & animal, & dog2, & dog3,
-		& cat2, & cat3, & crocodile};*/
+	{
+		animal a4;
+		cout << animal::getCount() << endl;
+		cout <<
+	}
 
-	animals = new animal * [size] {new dog("Sharly"), new Cat("Adel"), new crocodile("Aligator")};
+	cout << animal::count << endl;
 
 
+	//animal** animals;
+	//int size = 8;
 
-	studio.justDoIT(animals, size);
+	//animals = new animal * [size] {new dog("Sharly"), new Cat("Adel"), new crocodile("Aligator")};
 
+
+
+	return 0;
 }

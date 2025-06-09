@@ -11,8 +11,7 @@ public:
 			animals[i]->getVoice();
 
 		}
-		
+
 	}
 
 };
-

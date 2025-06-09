@@ -9,4 +9,3 @@ public:
 		cout << "Gauuuuuu... gauuuuuu... gauuuuuuuuu..." << endl;
 	}
 };
-

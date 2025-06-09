@@ -12,4 +12,3 @@ public:
 		cout << "Meow... meow... meow..." << endl;
 	}
 };
-
